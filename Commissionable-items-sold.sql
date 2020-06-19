@@ -5,8 +5,8 @@ SELECT
      /* or some other unique identifier that the business might want to track */
 		 II."Invoice Date" AS 'Invoice Date',
 		 II."Last Payment Date" AS "Payment Date",
-     /* even though this is a base table, an intermediate step to the final report, some of this data is 
-     actually really useful for other reports we can make, i.e. how long payments take to come in after being invoiced */
+     /* much of this data is actually really useful for other reports we can make, i.e. how long 
+     payments take to come in after being invoiced */
 		 II."Invoice Status" AS "Invoice Status",
 		 IIII."Commission Rate" AS "Commission Rate",
 		 III."Commissionable?" AS 'Commissionable?',
